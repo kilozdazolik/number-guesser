@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser</title>
+	<link rel="shortcut icon" href="blueqsmark.png">
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <header>
+        <section class="title">
+            <button class="btn btn-repeat">🔁</button>
+            <h1>I've thought of a number...</h1>
+            <button class="btn btn-help">❔</button>
+        </section>
+        <section class="number">
+            <p class="guess-number">?</p>
+        </section>
+    </header>
+    <main>
+        <section class="left">
+            <input class="tip" type="number" placeholder="0" />
+            <button class="btn btn-send">Send</button>
+        </section>
+        <section class="right">
+            <p>Guess!</p>
+            <p class="text-interval">(Between 1 and 100!)</p>
+            <p class="text-info">-</p>
+            <p class="text-tips">Number of Guesses: 0</p>
+            <p class="text-record">Record: 0</p>
+        </section>
+    </main>
+    <div class="modal hiden">
+        <p>I've thought of a number... Guess! For every guess you'll get a help if the number is bigger or smaller.</p>
+    </div>
+    <div class="blur hiden"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
